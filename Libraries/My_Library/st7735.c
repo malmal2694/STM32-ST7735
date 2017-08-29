@@ -3,7 +3,6 @@
 #include <stm32f10x_rcc.h>
 #include <stm32f10x_spi.h>
 
-#include <delay.h>
 #include <st7735.h>
 #include <font5x7.h>
 
@@ -11,6 +10,11 @@
 uint16_t scr_width;
 uint16_t scr_height;
 
+void Delay_ms(__uint16_t Time_ms)
+{
+	while(Time_ms--)
+		for (__uint16_t i = 0; i <= (CLOCK_FREQUENCY / 10000); i++);// wait 1ms
+};
 
 void ST7735_write(uint8_t data) {
 #ifdef SOFT_SPI
