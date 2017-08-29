@@ -15,6 +15,7 @@ tmp/
 *~.nib
 local.properties
 .settings/
+Debug/
 .loadpath
 .recommenders
 
