@@ -4,7 +4,6 @@
 #include <stm32f10x_spi.h>
 #include <misc.h> // interrupts
 
-#include <delay.h>
 #include <st7735.h>
 #include <garmin-digits.h>
 

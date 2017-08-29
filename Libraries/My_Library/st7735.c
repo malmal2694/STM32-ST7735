@@ -6,6 +6,7 @@
 #include <st7735.h>
 #include <font5x7.h>
 
+#define CLOCK_FREQUENCY 18000000
 
 uint16_t scr_width;
 uint16_t scr_height;
