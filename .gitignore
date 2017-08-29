@@ -2,7 +2,7 @@
 # Created by https://www.gitignore.io/api/windows,visualstudio
 
 #hide folder visualGDB
-VisualGDB
+*.vcxproj
 
 ### Windows ###
 # Windows thumbnail cache files
