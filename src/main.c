@@ -235,62 +235,7 @@ int main(void)
 	InitializeTimer();
 	EnableTimerInterrupt();
 
-
-
-	while(1) {
-//		ST7735_BigDig(2,0,35,RGB565(212,246,190));
-//		ST7735_BigDig(3,16,35,RGB565(212,246,190));
-//		ST7735_FillRect(33,42,35,44,RGB565(177,211,190));
-//		ST7735_FillRect(33,67,35,69,RGB565(177,211,190));
-//		ST7735_BigDig(4,37,35,RGB565(212,246,190));
-//		ST7735_BigDig(8,53,35,RGB565(212,246,190));
-//		ST7735_FillRect(70,42,72,44,RGB565(177,211,190));
-//		ST7735_FillRect(70,67,72,69,RGB565(177,211,190));
-//		ST7735_BigDig(5,75,35,RGB565(212,246,190));
-//		ST7735_BigDig(6,91,35,RGB565(212,246,190));
-//		ST7735_PutStr5x7(0,80,"Time:",RGB565(255,255,255));
-
-//		int timerValue = TIM_GetCounter(TIM2);
-//		if (timerValue == 400)
-//			GPIO_WriteBit(GPIOC, GPIO_Pin_13, Bit_SET);
-//		else if (timerValue == 500)
-//			GPIO_WriteBit(GPIOC, GPIO_Pin_13, Bit_RESET);
-
-
+	while(1)
+	{
 	}
-
-    while(1) {
-    }
 }
-
-
-//#include <stm32f10x_gpio.h>
-//#include <stm32f10x_rcc.h>
-//
-//void Delay()
-//{
-//	int i;
-//	for (i = 0; i < 1000000; i++)
-//		asm("nop");
-//}
-
-//int main()
-//{
-//	GPIO_InitTypeDef GPIO_InitStructure;
-//
-//	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOC, ENABLE);
-//
-//	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_13;
-//
-//	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
-//	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
-//	GPIO_Init(GPIOC, &GPIO_InitStructure);
-//
-//	for (;;)
-//	{
-//		GPIO_WriteBit(GPIOC, GPIO_Pin_13, Bit_SET);
-//		Delay();
-//		GPIO_WriteBit(GPIOC, GPIO_Pin_13, Bit_RESET);
-//		Delay();
-//	}
-//}
